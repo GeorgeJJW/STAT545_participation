@@ -22,7 +22,7 @@ library(tidyverse)
 ```
 
 ```
-## ── Attaching packages ───────────────────────────────────────────── tidyverse 1.2.1 ──
+## ── Attaching packages ────────────────────────────────────────────────── tidyverse 1.2.1 ──
 ```
 
 ```
@@ -33,7 +33,7 @@ library(tidyverse)
 ```
 
 ```
-## ── Conflicts ──────────────────────────────────────────────── tidyverse_conflicts() ──
+## ── Conflicts ───────────────────────────────────────────────────── tidyverse_conflicts() ──
 ## ✖ dplyr::filter() masks stats::filter()
 ## ✖ dplyr::lag()    masks stats::lag()
 ```
@@ -276,6 +276,59 @@ Your task is to use metaprogramming to check whether a response (like the one ab
 # Relational/Comparison and Logical Operators in R
 
 1. Find all entries of Canada and Algeria occuring in the '60s. 
+
+
+```r
+gapminder %>% 
+    filter((country == "Canada" | country == "Algeria") & year >=1960 & year < 1970)
+```
+
+```
+## # A tibble: 4 x 6
+##   country continent  year lifeExp      pop gdpPercap
+##   <fct>   <fct>     <int>   <dbl>    <int>     <dbl>
+## 1 Algeria Africa     1962    48.3 11000948     2551.
+## 2 Algeria Africa     1967    51.4 12760499     3247.
+## 3 Canada  Americas   1962    71.3 18985849    13462.
+## 4 Canada  Americas   1967    72.1 20819767    16077.
+```
+
+```r
+gapminder %>% 
+    filter(country %in% c("Canada", "Algeria"), 
+           year >= 1960, 
+           year < 1970)
+```
+
+```
+## # A tibble: 4 x 6
+##   country continent  year lifeExp      pop gdpPercap
+##   <fct>   <fct>     <int>   <dbl>    <int>     <dbl>
+## 1 Algeria Africa     1962    48.3 11000948     2551.
+## 2 Algeria Africa     1967    51.4 12760499     3247.
+## 3 Canada  Americas   1962    71.3 18985849    13462.
+## 4 Canada  Americas   1967    72.1 20819767    16077.
+```
+
+```r
+gapminder %>% 
+    filter(pop > 1000000000)
+```
+
+```
+## # A tibble: 8 x 6
+##   country continent  year lifeExp        pop gdpPercap
+##   <fct>   <fct>     <int>   <dbl>      <int>     <dbl>
+## 1 China   Asia       1982    65.5 1000281000      962.
+## 2 China   Asia       1987    67.3 1084035000     1379.
+## 3 China   Asia       1992    68.7 1164970000     1656.
+## 4 China   Asia       1997    70.4 1230075000     2289.
+## 5 China   Asia       2002    72.0 1280400000     3119.
+## 6 China   Asia       2007    73.0 1318683096     4959.
+## 7 India   Asia       2002    62.9 1034172547     1747.
+## 8 India   Asia       2007    64.7 1110396331     2452.
+```
+
 
 2. Find all entries of Canada, and entries of Algeria occuring in the '60s. 
 3. Find all entries _not_ including Canada and Algeria.

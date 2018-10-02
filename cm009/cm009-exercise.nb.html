@@ -309,6 +309,24 @@ cols(
 </ol>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuKGxvdHJfdW50aWR5IDwtIGJpbmRfcm93cyhsb3RyMSwgbG90cjIsIGxvdHIzKSlcblxuYGBgIn0= -->
+<pre class="r"><code>(lotr_untidy &lt;- bind_rows(lotr1, lotr2, lotr3))
+</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiXHUwMDFiWzM4OzU7MjQ2bSMgQSB0aWJibGU6IDkgeCA0XHUwMDFiWzM5bVxuICBGaWxtICAgICAgICAgICAgICAgICAgICAgICBSYWNlICAgRmVtYWxlICBNYWxlXG4gIFx1MDAxYlszbVx1MDAxYlszODs1OzI0Nm08Y2hyPlx1MDAxYlszOW1cdTAwMWJbMjNtICAgICAgICAgICAgICAgICAgICAgIFx1MDAxYlszbVx1MDAxYlszODs1OzI0Nm08Y2hyPlx1MDAxYlszOW1cdTAwMWJbMjNtICAgXHUwMDFiWzNtXHUwMDFiWzM4OzU7MjQ2bTxpbnQ+XHUwMDFiWzM5bVx1MDAxYlsyM20gXHUwMDFiWzNtXHUwMDFiWzM4OzU7MjQ2bTxpbnQ+XHUwMDFiWzM5bVx1MDAxYlsyM21cblx1MDAxYlszODs1OzI1MG0xXHUwMDFiWzM5bSBUaGUgRmVsbG93c2hpcCBPZiBUaGUgUmluZyBFbGYgICAgICBcdTAwMWJbNG0xXHUwMDFiWzI0bTIyOSAgIDk3MVxuXHUwMDFiWzM4OzU7MjUwbTJcdTAwMWJbMzltIFRoZSBGZWxsb3dzaGlwIE9mIFRoZSBSaW5nIEhvYmJpdCAgICAgMTQgIFx1MDAxYls0bTNcdTAwMWJbMjRtNjQ0XG5cdTAwMWJbMzg7NTsyNTBtM1x1MDAxYlszOW0gVGhlIEZlbGxvd3NoaXAgT2YgVGhlIFJpbmcgTWFuICAgICAgICAgMCAgXHUwMDFiWzRtMVx1MDAxYlsyNG05OTVcblx1MDAxYlszODs1OzI1MG00XHUwMDFiWzM5bSBUaGUgVHdvIFRvd2VycyAgICAgICAgICAgICBFbGYgICAgICAgMzMxICAgNTEzXG5cdTAwMWJbMzg7NTsyNTBtNVx1MDAxYlszOW0gVGhlIFR3byBUb3dlcnMgICAgICAgICAgICAgSG9iYml0ICAgICAgMCAgXHUwMDFiWzRtMlx1MDAxYlsyNG00NjNcblx1MDAxYlszODs1OzI1MG02XHUwMDFiWzM5bSBUaGUgVHdvIFRvd2VycyAgICAgICAgICAgICBNYW4gICAgICAgNDAxICBcdTAwMWJbNG0zXHUwMDFiWzI0bTU4OVxuXHUwMDFiWzM4OzU7MjUwbTdcdTAwMWJbMzltIFRoZSBSZXR1cm4gT2YgVGhlIEtpbmcgICAgIEVsZiAgICAgICAxODMgICA1MTBcblx1MDAxYlszODs1OzI1MG04XHUwMDFiWzM5bSBUaGUgUmV0dXJuIE9mIFRoZSBLaW5nICAgICBIb2JiaXQgICAgICAyICBcdTAwMWJbNG0yXHUwMDFiWzI0bTY3M1xuXHUwMDFiWzM4OzU7MjUwbTlcdTAwMWJbMzltIFRoZSBSZXR1cm4gT2YgVGhlIEtpbmcgICAgIE1hbiAgICAgICAyNjggIFx1MDAxYls0bTJcdTAwMWJbMjRtNDU5XG4ifQ== -->
+<pre><code>[38;5;246m# A tibble: 9 x 4[39m
+  Film                       Race   Female  Male
+  [3m[38;5;246m&lt;chr&gt;[39m[23m                      [3m[38;5;246m&lt;chr&gt;[39m[23m   [3m[38;5;246m&lt;int&gt;[39m[23m [3m[38;5;246m&lt;int&gt;[39m[23m
+[38;5;250m1[39m The Fellowship Of The Ring Elf      [4m1[24m229   971
+[38;5;250m2[39m The Fellowship Of The Ring Hobbit     14  [4m3[24m644
+[38;5;250m3[39m The Fellowship Of The Ring Man         0  [4m1[24m995
+[38;5;250m4[39m The Two Towers             Elf       331   513
+[38;5;250m5[39m The Two Towers             Hobbit      0  [4m2[24m463
+[38;5;250m6[39m The Two Towers             Man       401  [4m3[24m589
+[38;5;250m7[39m The Return Of The King     Elf       183   510
+[38;5;250m8[39m The Return Of The King     Hobbit      2  [4m2[24m673
+[38;5;250m9[39m The Return Of The King     Man       268  [4m2[24m459</code></pre>
+<!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <ol start="2" style="list-style-type: decimal">
@@ -316,6 +334,33 @@ cols(
 </ol>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZ2F0aGVyKGxvdHJfdW50aWR5LCBrZXk9XCJHZW5kZXJcIiwgdmFsdWU9XCJXb3JkXCIsIGNvbnRhaW5zKFwiYWxlXCIpKVxuXG5gYGAifQ== -->
+<pre class="r"><code>gather(lotr_untidy, key=&quot;Gender&quot;, value=&quot;Word&quot;, contains(&quot;ale&quot;))
+</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiXHUwMDFiWzM4OzU7MjQ2bSMgQSB0aWJibGU6IDE4IHggNFx1MDAxYlszOW1cbiAgIEZpbG0gICAgICAgICAgICAgICAgICAgICAgIFJhY2UgICBHZW5kZXIgIFdvcmRcbiAgIFx1MDAxYlszbVx1MDAxYlszODs1OzI0Nm08Y2hyPlx1MDAxYlszOW1cdTAwMWJbMjNtICAgICAgICAgICAgICAgICAgICAgIFx1MDAxYlszbVx1MDAxYlszODs1OzI0Nm08Y2hyPlx1MDAxYlszOW1cdTAwMWJbMjNtICBcdTAwMWJbM21cdTAwMWJbMzg7NTsyNDZtPGNocj5cdTAwMWJbMzltXHUwMDFiWzIzbSAgXHUwMDFiWzNtXHUwMDFiWzM4OzU7MjQ2bTxpbnQ+XHUwMDFiWzM5bVx1MDAxYlsyM21cblx1MDAxYlszODs1OzI1MG0gMVx1MDAxYlszOW0gVGhlIEZlbGxvd3NoaXAgT2YgVGhlIFJpbmcgRWxmICAgIEZlbWFsZSAgXHUwMDFiWzRtMVx1MDAxYlsyNG0yMjlcblx1MDAxYlszODs1OzI1MG0gMlx1MDAxYlszOW0gVGhlIEZlbGxvd3NoaXAgT2YgVGhlIFJpbmcgSG9iYml0IEZlbWFsZSAgICAxNFxuXHUwMDFiWzM4OzU7MjUwbSAzXHUwMDFiWzM5bSBUaGUgRmVsbG93c2hpcCBPZiBUaGUgUmluZyBNYW4gICAgRmVtYWxlICAgICAwXG5cdTAwMWJbMzg7NTsyNTBtIDRcdTAwMWJbMzltIFRoZSBUd28gVG93ZXJzICAgICAgICAgICAgIEVsZiAgICBGZW1hbGUgICAzMzFcblx1MDAxYlszODs1OzI1MG0gNVx1MDAxYlszOW0gVGhlIFR3byBUb3dlcnMgICAgICAgICAgICAgSG9iYml0IEZlbWFsZSAgICAgMFxuXHUwMDFiWzM4OzU7MjUwbSA2XHUwMDFiWzM5bSBUaGUgVHdvIFRvd2VycyAgICAgICAgICAgICBNYW4gICAgRmVtYWxlICAgNDAxXG5cdTAwMWJbMzg7NTsyNTBtIDdcdTAwMWJbMzltIFRoZSBSZXR1cm4gT2YgVGhlIEtpbmcgICAgIEVsZiAgICBGZW1hbGUgICAxODNcblx1MDAxYlszODs1OzI1MG0gOFx1MDAxYlszOW0gVGhlIFJldHVybiBPZiBUaGUgS2luZyAgICAgSG9iYml0IEZlbWFsZSAgICAgMlxuXHUwMDFiWzM4OzU7MjUwbSA5XHUwMDFiWzM5bSBUaGUgUmV0dXJuIE9mIFRoZSBLaW5nICAgICBNYW4gICAgRmVtYWxlICAgMjY4XG5cdTAwMWJbMzg7NTsyNTBtMTBcdTAwMWJbMzltIFRoZSBGZWxsb3dzaGlwIE9mIFRoZSBSaW5nIEVsZiAgICBNYWxlICAgICA5NzFcblx1MDAxYlszODs1OzI1MG0xMVx1MDAxYlszOW0gVGhlIEZlbGxvd3NoaXAgT2YgVGhlIFJpbmcgSG9iYml0IE1hbGUgICAgXHUwMDFiWzRtM1x1MDAxYlsyNG02NDRcblx1MDAxYlszODs1OzI1MG0xMlx1MDAxYlszOW0gVGhlIEZlbGxvd3NoaXAgT2YgVGhlIFJpbmcgTWFuICAgIE1hbGUgICAgXHUwMDFiWzRtMVx1MDAxYlsyNG05OTVcblx1MDAxYlszODs1OzI1MG0xM1x1MDAxYlszOW0gVGhlIFR3byBUb3dlcnMgICAgICAgICAgICAgRWxmICAgIE1hbGUgICAgIDUxM1xuXHUwMDFiWzM4OzU7MjUwbTE0XHUwMDFiWzM5bSBUaGUgVHdvIFRvd2VycyAgICAgICAgICAgICBIb2JiaXQgTWFsZSAgICBcdTAwMWJbNG0yXHUwMDFiWzI0bTQ2M1xuXHUwMDFiWzM4OzU7MjUwbTE1XHUwMDFiWzM5bSBUaGUgVHdvIFRvd2VycyAgICAgICAgICAgICBNYW4gICAgTWFsZSAgICBcdTAwMWJbNG0zXHUwMDFiWzI0bTU4OVxuXHUwMDFiWzM4OzU7MjUwbTE2XHUwMDFiWzM5bSBUaGUgUmV0dXJuIE9mIFRoZSBLaW5nICAgICBFbGYgICAgTWFsZSAgICAgNTEwXG5cdTAwMWJbMzg7NTsyNTBtMTdcdTAwMWJbMzltIFRoZSBSZXR1cm4gT2YgVGhlIEtpbmcgICAgIEhvYmJpdCBNYWxlICAgIFx1MDAxYls0bTJcdTAwMWJbMjRtNjczXG5cdTAwMWJbMzg7NTsyNTBtMThcdTAwMWJbMzltIFRoZSBSZXR1cm4gT2YgVGhlIEtpbmcgICAgIE1hbiAgICBNYWxlICAgIFx1MDAxYls0bTJcdTAwMWJbMjRtNDU5XG4ifQ== -->
+<pre><code>[38;5;246m# A tibble: 18 x 4[39m
+   Film                       Race   Gender  Word
+   [3m[38;5;246m&lt;chr&gt;[39m[23m                      [3m[38;5;246m&lt;chr&gt;[39m[23m  [3m[38;5;246m&lt;chr&gt;[39m[23m  [3m[38;5;246m&lt;int&gt;[39m[23m
+[38;5;250m 1[39m The Fellowship Of The Ring Elf    Female  [4m1[24m229
+[38;5;250m 2[39m The Fellowship Of The Ring Hobbit Female    14
+[38;5;250m 3[39m The Fellowship Of The Ring Man    Female     0
+[38;5;250m 4[39m The Two Towers             Elf    Female   331
+[38;5;250m 5[39m The Two Towers             Hobbit Female     0
+[38;5;250m 6[39m The Two Towers             Man    Female   401
+[38;5;250m 7[39m The Return Of The King     Elf    Female   183
+[38;5;250m 8[39m The Return Of The King     Hobbit Female     2
+[38;5;250m 9[39m The Return Of The King     Man    Female   268
+[38;5;250m10[39m The Fellowship Of The Ring Elf    Male     971
+[38;5;250m11[39m The Fellowship Of The Ring Hobbit Male    [4m3[24m644
+[38;5;250m12[39m The Fellowship Of The Ring Man    Male    [4m1[24m995
+[38;5;250m13[39m The Two Towers             Elf    Male     513
+[38;5;250m14[39m The Two Towers             Hobbit Male    [4m2[24m463
+[38;5;250m15[39m The Two Towers             Man    Male    [4m3[24m589
+[38;5;250m16[39m The Return Of The King     Elf    Male     510
+[38;5;250m17[39m The Return Of The King     Hobbit Male    [4m2[24m673
+[38;5;250m18[39m The Return Of The King     Man    Male    [4m2[24m459</code></pre>
+<!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <ol start="3" style="list-style-type: decimal">
@@ -326,6 +371,24 @@ cols(
 </ol>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZG8uY2FsbChiaW5kX3Jvd3MsIGxvdHJfbGlzdClcblxuYGBgIn0= -->
+<pre class="r"><code>do.call(bind_rows, lotr_list)
+</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiXHUwMDFiWzM4OzU7MjQ2bSMgQSB0aWJibGU6IDkgeCA0XHUwMDFiWzM5bVxuICBGaWxtICAgICAgICAgICAgICAgICAgICAgICBSYWNlICAgRmVtYWxlICBNYWxlXG4gIFx1MDAxYlszbVx1MDAxYlszODs1OzI0Nm08Y2hyPlx1MDAxYlszOW1cdTAwMWJbMjNtICAgICAgICAgICAgICAgICAgICAgIFx1MDAxYlszbVx1MDAxYlszODs1OzI0Nm08Y2hyPlx1MDAxYlszOW1cdTAwMWJbMjNtICAgXHUwMDFiWzNtXHUwMDFiWzM4OzU7MjQ2bTxpbnQ+XHUwMDFiWzM5bVx1MDAxYlsyM20gXHUwMDFiWzNtXHUwMDFiWzM4OzU7MjQ2bTxpbnQ+XHUwMDFiWzM5bVx1MDAxYlsyM21cblx1MDAxYlszODs1OzI1MG0xXHUwMDFiWzM5bSBUaGUgRmVsbG93c2hpcCBPZiBUaGUgUmluZyBFbGYgICAgICBcdTAwMWJbNG0xXHUwMDFiWzI0bTIyOSAgIDk3MVxuXHUwMDFiWzM4OzU7MjUwbTJcdTAwMWJbMzltIFRoZSBGZWxsb3dzaGlwIE9mIFRoZSBSaW5nIEhvYmJpdCAgICAgMTQgIFx1MDAxYls0bTNcdTAwMWJbMjRtNjQ0XG5cdTAwMWJbMzg7NTsyNTBtM1x1MDAxYlszOW0gVGhlIEZlbGxvd3NoaXAgT2YgVGhlIFJpbmcgTWFuICAgICAgICAgMCAgXHUwMDFiWzRtMVx1MDAxYlsyNG05OTVcblx1MDAxYlszODs1OzI1MG00XHUwMDFiWzM5bSBUaGUgVHdvIFRvd2VycyAgICAgICAgICAgICBFbGYgICAgICAgMzMxICAgNTEzXG5cdTAwMWJbMzg7NTsyNTBtNVx1MDAxYlszOW0gVGhlIFR3byBUb3dlcnMgICAgICAgICAgICAgSG9iYml0ICAgICAgMCAgXHUwMDFiWzRtMlx1MDAxYlsyNG00NjNcblx1MDAxYlszODs1OzI1MG02XHUwMDFiWzM5bSBUaGUgVHdvIFRvd2VycyAgICAgICAgICAgICBNYW4gICAgICAgNDAxICBcdTAwMWJbNG0zXHUwMDFiWzI0bTU4OVxuXHUwMDFiWzM4OzU7MjUwbTdcdTAwMWJbMzltIFRoZSBSZXR1cm4gT2YgVGhlIEtpbmcgICAgIEVsZiAgICAgICAxODMgICA1MTBcblx1MDAxYlszODs1OzI1MG04XHUwMDFiWzM5bSBUaGUgUmV0dXJuIE9mIFRoZSBLaW5nICAgICBIb2JiaXQgICAgICAyICBcdTAwMWJbNG0yXHUwMDFiWzI0bTY3M1xuXHUwMDFiWzM4OzU7MjUwbTlcdTAwMWJbMzltIFRoZSBSZXR1cm4gT2YgVGhlIEtpbmcgICAgIE1hbiAgICAgICAyNjggIFx1MDAxYls0bTJcdTAwMWJbMjRtNDU5XG4ifQ== -->
+<pre><code>[38;5;246m# A tibble: 9 x 4[39m
+  Film                       Race   Female  Male
+  [3m[38;5;246m&lt;chr&gt;[39m[23m                      [3m[38;5;246m&lt;chr&gt;[39m[23m   [3m[38;5;246m&lt;int&gt;[39m[23m [3m[38;5;246m&lt;int&gt;[39m[23m
+[38;5;250m1[39m The Fellowship Of The Ring Elf      [4m1[24m229   971
+[38;5;250m2[39m The Fellowship Of The Ring Hobbit     14  [4m3[24m644
+[38;5;250m3[39m The Fellowship Of The Ring Man         0  [4m1[24m995
+[38;5;250m4[39m The Two Towers             Elf       331   513
+[38;5;250m5[39m The Two Towers             Hobbit      0  [4m2[24m463
+[38;5;250m6[39m The Two Towers             Man       401  [4m3[24m589
+[38;5;250m7[39m The Return Of The King     Elf       183   510
+[38;5;250m8[39m The Return Of The King     Hobbit      2  [4m2[24m673
+[38;5;250m9[39m The Return Of The King     Man       268  [4m2[24m459</code></pre>
+<!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 </div>
@@ -336,19 +399,66 @@ cols(
 <p>Read in the tidy LOTR data (despite having just made it):</p>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubG90cl90aWR5IDwtIHJlYWRfY3N2KFwiaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2plbm55YmMvbG90ci10aWR5L21hc3Rlci9kYXRhL2xvdHJfdGlkeS5jc3ZcIilcbmBgYCJ9 -->
-<pre class="r"><code>lotr_tidy &lt;- read_csv(&quot;https://raw.githubusercontent.com/jennybc/lotr-tidy/master/data/lotr_tidy.csv&quot;)</code></pre>
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubG90cl90aWR5IDwtIHJlYWRfY3N2KFwiaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2plbm55YmMvbG90ci10aWR5L21hc3Rlci9kYXRhL2xvdHJfdGlkeS5jc3ZcIilcblxuYGBgIn0= -->
+<pre class="r"><code>lotr_tidy &lt;- read_csv(&quot;https://raw.githubusercontent.com/jennybc/lotr-tidy/master/data/lotr_tidy.csv&quot;)
+</code></pre>
 <!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiUGFyc2VkIHdpdGggY29sdW1uIHNwZWNpZmljYXRpb246XG5jb2xzKFxuICBGaWxtID0gY29sX2NoYXJhY3RlcigpLFxuICBSYWNlID0gY29sX2NoYXJhY3RlcigpLFxuICBHZW5kZXIgPSBjb2xfY2hhcmFjdGVyKCksXG4gIFdvcmRzID0gY29sX2ludGVnZXIoKVxuKVxuIn0= -->
+<pre><code>Parsed with column specification:
+cols(
+  Film = col_character(),
+  Race = col_character(),
+  Gender = col_character(),
+  Words = col_integer()
+)</code></pre>
+<!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <p>Get word counts across “Race”. Then try “Gender”.</p>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuc3ByZWFkKGxvdHJfdGlkeSwga2V5ID0gXCJSYWNlXCIsIHZhbHVlID0gXCJXb3JkXCIpXG5cbmBgYCJ9 -->
+<pre class="r"><code>spread(lotr_tidy, key = &quot;Race&quot;, value = &quot;Word&quot;)
+</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiJ2dsdWU6OmNvbGxhcHNlJyBpcyBkZXByZWNhdGVkLlxuVXNlICdnbHVlX2NvbGxhcHNlJyBpbnN0ZWFkLlxuU2VlIGhlbHAoXCJEZXByZWNhdGVkXCIpIGFuZCBoZWxwKFwiZ2x1ZS1kZXByZWNhdGVkXCIpLkVycm9yOiBTdHJpbmdzIG11c3QgbWF0Y2ggY29sdW1uIG5hbWVzLiBVbmtub3duIGNvbHVtbnM6IFdvcmRcbiJ9 -->
+<pre><code>'glue::collapse' is deprecated.
+Use 'glue_collapse' instead.
+See help(&quot;Deprecated&quot;) and help(&quot;glue-deprecated&quot;).Error: Strings must match column names. Unknown columns: Word</code></pre>
+<!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <p>Now try combining race and gender. Use <code>unite()</code> from <code>tidyr</code> instead of <code>paste()</code>.</p>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubG90cl90aWR5ICU+JSBcbiAgICBtdXRhdGUoeCA9IHJub3JtKG5yb3cobG90cl90aWR5KSkpXG5cbmBgYCJ9 -->
+<pre class="r"><code>lotr_tidy %&gt;% 
+    mutate(x = rnorm(nrow(lotr_tidy)))
+</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiXHUwMDFiWzM4OzU7MjQ2bSMgQSB0aWJibGU6IDE4IHggNVx1MDAxYlszOW1cbiAgIEZpbG0gICAgICAgICAgICAgICAgICAgICAgIFJhY2UgICBHZW5kZXIgV29yZHMgICAgICAgeFxuICAgXHUwMDFiWzNtXHUwMDFiWzM4OzU7MjQ2bTxjaHI+XHUwMDFiWzM5bVx1MDAxYlsyM20gICAgICAgICAgICAgICAgICAgICAgXHUwMDFiWzNtXHUwMDFiWzM4OzU7MjQ2bTxjaHI+XHUwMDFiWzM5bVx1MDAxYlsyM20gIFx1MDAxYlszbVx1MDAxYlszODs1OzI0Nm08Y2hyPlx1MDAxYlszOW1cdTAwMWJbMjNtICBcdTAwMWJbM21cdTAwMWJbMzg7NTsyNDZtPGludD5cdTAwMWJbMzltXHUwMDFiWzIzbSAgIFx1MDAxYlszbVx1MDAxYlszODs1OzI0Nm08ZGJsPlx1MDAxYlszOW1cdTAwMWJbMjNtXG5cdTAwMWJbMzg7NTsyNTBtIDFcdTAwMWJbMzltIFRoZSBGZWxsb3dzaGlwIE9mIFRoZSBSaW5nIEVsZiAgICBGZW1hbGUgIFx1MDAxYls0bTFcdTAwMWJbMjRtMjI5ICAxLjAwICBcblx1MDAxYlszODs1OzI1MG0gMlx1MDAxYlszOW0gVGhlIEZlbGxvd3NoaXAgT2YgVGhlIFJpbmcgSG9iYml0IEZlbWFsZSAgICAxNCAgMi42NCAgXG5cdTAwMWJbMzg7NTsyNTBtIDNcdTAwMWJbMzltIFRoZSBGZWxsb3dzaGlwIE9mIFRoZSBSaW5nIE1hbiAgICBGZW1hbGUgICAgIDAgIDEuNDYgIFxuXHUwMDFiWzM4OzU7MjUwbSA0XHUwMDFiWzM5bSBUaGUgVHdvIFRvd2VycyAgICAgICAgICAgICBFbGYgICAgRmVtYWxlICAgMzMxICAxLjA0ICBcblx1MDAxYlszODs1OzI1MG0gNVx1MDAxYlszOW0gVGhlIFR3byBUb3dlcnMgICAgICAgICAgICAgSG9iYml0IEZlbWFsZSAgICAgMCAgMi4zOSAgXG5cdTAwMWJbMzg7NTsyNTBtIDZcdTAwMWJbMzltIFRoZSBUd28gVG93ZXJzICAgICAgICAgICAgIE1hbiAgICBGZW1hbGUgICA0MDEgLVx1MDAxYlszMW0xXHUwMDFiWzM5bVx1MDAxYlszMW0uXHUwMDFiWzM5bVx1MDAxYlszMW00OFx1MDAxYlszOW0gIFxuXHUwMDFiWzM4OzU7MjUwbSA3XHUwMDFiWzM5bSBUaGUgUmV0dXJuIE9mIFRoZSBLaW5nICAgICBFbGYgICAgRmVtYWxlICAgMTgzICAwLjgzNiBcblx1MDAxYlszODs1OzI1MG0gOFx1MDAxYlszOW0gVGhlIFJldHVybiBPZiBUaGUgS2luZyAgICAgSG9iYml0IEZlbWFsZSAgICAgMiAgMS4wOCAgXG5cdTAwMWJbMzg7NTsyNTBtIDlcdTAwMWJbMzltIFRoZSBSZXR1cm4gT2YgVGhlIEtpbmcgICAgIE1hbiAgICBGZW1hbGUgICAyNjggLVx1MDAxYlszMW0wXHUwMDFiWzM5bVx1MDAxYlszMW0uXHUwMDFiWzM5bVx1MDAxYlszMW0xMThcdTAwMWJbMzltIFxuXHUwMDFiWzM4OzU7MjUwbTEwXHUwMDFiWzM5bSBUaGUgRmVsbG93c2hpcCBPZiBUaGUgUmluZyBFbGYgICAgTWFsZSAgICAgOTcxICAwLjIyMSBcblx1MDAxYlszODs1OzI1MG0xMVx1MDAxYlszOW0gVGhlIEZlbGxvd3NoaXAgT2YgVGhlIFJpbmcgSG9iYml0IE1hbGUgICAgXHUwMDFiWzRtM1x1MDAxYlsyNG02NDQgLVx1MDAxYlszMW0xXHUwMDFiWzM5bVx1MDAxYlszMW0uXHUwMDFiWzM5bVx1MDAxYlszMW03NFx1MDAxYlszOW0gIFxuXHUwMDFiWzM4OzU7MjUwbTEyXHUwMDFiWzM5bSBUaGUgRmVsbG93c2hpcCBPZiBUaGUgUmluZyBNYW4gICAgTWFsZSAgICBcdTAwMWJbNG0xXHUwMDFiWzI0bTk5NSAgMC4wMTdcdTAwMWJbNG03XHUwMDFiWzI0bVxuXHUwMDFiWzM4OzU7MjUwbTEzXHUwMDFiWzM5bSBUaGUgVHdvIFRvd2VycyAgICAgICAgICAgICBFbGYgICAgTWFsZSAgICAgNTEzICAwLjQyNiBcblx1MDAxYlszODs1OzI1MG0xNFx1MDAxYlszOW0gVGhlIFR3byBUb3dlcnMgICAgICAgICAgICAgSG9iYml0IE1hbGUgICAgXHUwMDFiWzRtMlx1MDAxYlsyNG00NjMgIDEuODIgIFxuXHUwMDFiWzM4OzU7MjUwbTE1XHUwMDFiWzM5bSBUaGUgVHdvIFRvd2VycyAgICAgICAgICAgICBNYW4gICAgTWFsZSAgICBcdTAwMWJbNG0zXHUwMDFiWzI0bTU4OSAgMC4yMjcgXG5cdTAwMWJbMzg7NTsyNTBtMTZcdTAwMWJbMzltIFRoZSBSZXR1cm4gT2YgVGhlIEtpbmcgICAgIEVsZiAgICBNYWxlICAgICA1MTAgLVx1MDAxYlszMW0wXHUwMDFiWzM5bVx1MDAxYlszMW0uXHUwMDFiWzM5bVx1MDAxYlszMW01MzNcdTAwMWJbMzltIFxuXHUwMDFiWzM4OzU7MjUwbTE3XHUwMDFiWzM5bSBUaGUgUmV0dXJuIE9mIFRoZSBLaW5nICAgICBIb2JiaXQgTWFsZSAgICBcdTAwMWJbNG0yXHUwMDFiWzI0bTY3MyAtXHUwMDFiWzMxbTBcdTAwMWJbMzltXHUwMDFiWzMxbS5cdTAwMWJbMzltXHUwMDFiWzMxbTQ5Nlx1MDAxYlszOW0gXG5cdTAwMWJbMzg7NTsyNTBtMThcdTAwMWJbMzltIFRoZSBSZXR1cm4gT2YgVGhlIEtpbmcgICAgIE1hbiAgICBNYWxlICAgIFx1MDAxYls0bTJcdTAwMWJbMjRtNDU5IC1cdTAwMWJbMzFtMFx1MDAxYlszOW1cdTAwMWJbMzFtLlx1MDAxYlszOW1cdTAwMWJbMzFtNDY2XHUwMDFiWzM5bSBcbiJ9 -->
+<pre><code>[38;5;246m# A tibble: 18 x 5[39m
+   Film                       Race   Gender Words       x
+   [3m[38;5;246m&lt;chr&gt;[39m[23m                      [3m[38;5;246m&lt;chr&gt;[39m[23m  [3m[38;5;246m&lt;chr&gt;[39m[23m  [3m[38;5;246m&lt;int&gt;[39m[23m   [3m[38;5;246m&lt;dbl&gt;[39m[23m
+[38;5;250m 1[39m The Fellowship Of The Ring Elf    Female  [4m1[24m229  1.00  
+[38;5;250m 2[39m The Fellowship Of The Ring Hobbit Female    14  2.64  
+[38;5;250m 3[39m The Fellowship Of The Ring Man    Female     0  1.46  
+[38;5;250m 4[39m The Two Towers             Elf    Female   331  1.04  
+[38;5;250m 5[39m The Two Towers             Hobbit Female     0  2.39  
+[38;5;250m 6[39m The Two Towers             Man    Female   401 -[31m1[39m[31m.[39m[31m48[39m  
+[38;5;250m 7[39m The Return Of The King     Elf    Female   183  0.836 
+[38;5;250m 8[39m The Return Of The King     Hobbit Female     2  1.08  
+[38;5;250m 9[39m The Return Of The King     Man    Female   268 -[31m0[39m[31m.[39m[31m118[39m 
+[38;5;250m10[39m The Fellowship Of The Ring Elf    Male     971  0.221 
+[38;5;250m11[39m The Fellowship Of The Ring Hobbit Male    [4m3[24m644 -[31m1[39m[31m.[39m[31m74[39m  
+[38;5;250m12[39m The Fellowship Of The Ring Man    Male    [4m1[24m995  0.017[4m7[24m
+[38;5;250m13[39m The Two Towers             Elf    Male     513  0.426 
+[38;5;250m14[39m The Two Towers             Hobbit Male    [4m2[24m463  1.82  
+[38;5;250m15[39m The Two Towers             Man    Male    [4m3[24m589  0.227 
+[38;5;250m16[39m The Return Of The King     Elf    Male     510 -[31m0[39m[31m.[39m[31m533[39m 
+[38;5;250m17[39m The Return Of The King     Hobbit Male    [4m2[24m673 -[31m0[39m[31m.[39m[31m496[39m 
+[38;5;250m18[39m The Return Of The King     Man    Male    [4m2[24m459 -[31m0[39m[31m.[39m[31m466[39m </code></pre>
+<!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 </div>
@@ -358,11 +468,42 @@ cols(
 <p><code>expand</code> vs <code>complete</code> (trim vs keep everything). Together with <code>nesting</code>. Check out the Examples in the <code>expand</code> documentation.</p>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZXhwZXJpbWVudCAlPiUgZXhwYW5kKG5lc3RpbmcobmFtZSwgdHJ0KSwgcmVwKVxuXG5gYGAifQ== -->
+<pre class="r"><code>experiment %&gt;% expand(nesting(name, trt), rep)
+</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiXHUwMDFiWzM4OzU7MjQ2bSMgQSB0aWJibGU6IDkgeCAzXHUwMDFiWzM5bVxuICBuYW1lICAgdHJ0ICAgICByZXBcbiAgXHUwMDFiWzNtXHUwMDFiWzM4OzU7MjQ2bTxjaHI+XHUwMDFiWzM5bVx1MDAxYlsyM20gIFx1MDAxYlszbVx1MDAxYlszODs1OzI0Nm08Y2hyPlx1MDAxYlszOW1cdTAwMWJbMjNtIFx1MDAxYlszbVx1MDAxYlszODs1OzI0Nm08ZGJsPlx1MDAxYlszOW1cdTAwMWJbMjNtXG5cdTAwMWJbMzg7NTsyNTBtMVx1MDAxYlszOW0gQWxleCAgIGEgICAgICAgICAxXG5cdTAwMWJbMzg7NTsyNTBtMlx1MDAxYlszOW0gQWxleCAgIGEgICAgICAgICAyXG5cdTAwMWJbMzg7NTsyNTBtM1x1MDAxYlszOW0gQWxleCAgIGEgICAgICAgICAzXG5cdTAwMWJbMzg7NTsyNTBtNFx1MDAxYlszOW0gUm9iZXJ0IGIgICAgICAgICAxXG5cdTAwMWJbMzg7NTsyNTBtNVx1MDAxYlszOW0gUm9iZXJ0IGIgICAgICAgICAyXG5cdTAwMWJbMzg7NTsyNTBtNlx1MDAxYlszOW0gUm9iZXJ0IGIgICAgICAgICAzXG5cdTAwMWJbMzg7NTsyNTBtN1x1MDAxYlszOW0gU2FtICAgIGEgICAgICAgICAxXG5cdTAwMWJbMzg7NTsyNTBtOFx1MDAxYlszOW0gU2FtICAgIGEgICAgICAgICAyXG5cdTAwMWJbMzg7NTsyNTBtOVx1MDAxYlszOW0gU2FtICAgIGEgICAgICAgICAzXG4ifQ== -->
+<pre><code>[38;5;246m# A tibble: 9 x 3[39m
+  name   trt     rep
+  [3m[38;5;246m&lt;chr&gt;[39m[23m  [3m[38;5;246m&lt;chr&gt;[39m[23m [3m[38;5;246m&lt;dbl&gt;[39m[23m
+[38;5;250m1[39m Alex   a         1
+[38;5;250m2[39m Alex   a         2
+[38;5;250m3[39m Alex   a         3
+[38;5;250m4[39m Robert b         1
+[38;5;250m5[39m Robert b         2
+[38;5;250m6[39m Robert b         3
+[38;5;250m7[39m Sam    a         1
+[38;5;250m8[39m Sam    a         2
+[38;5;250m9[39m Sam    a         3</code></pre>
+<!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <p><code>separate_rows</code>: useful when you have a variable number of entries in a “cell”.</p>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuc2VwYXJhdGVfcm93cyhkZiwgeSwgeiwgY29udmVydCA9IFRSVUUpXG5cbmBgYCJ9 -->
+<pre class="r"><code>separate_rows(df, y, z, convert = TRUE)
+</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiICB4IHkgelxuMSAxIGEgMVxuMiAyIGQgMlxuMyAyIGUgM1xuNCAyIGYgNFxuNSAzIGcgNVxuNiAzIGggNlxuIn0= -->
+<pre><code>  x y z
+1 1 a 1
+2 2 d 2
+3 2 e 3
+4 2 f 4
+5 3 g 5
+6 3 h 6</code></pre>
+<!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <p><code>unite</code> and <code>separate</code>.</p>
@@ -373,6 +514,18 @@ cols(
 <p><code>uncount</code> (as the opposite of <code>dplyr::count()</code>)</p>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxudW5jb3VudChkZiwgbilcblxuYGBgIn0= -->
+<pre class="r"><code>uncount(df, n)
+</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiXHUwMDFiWzM4OzU7MjQ2bSMgQSB0aWJibGU6IDMgeCAxXHUwMDFiWzM5bVxuICB4ICAgIFxuICBcdTAwMWJbM21cdTAwMWJbMzg7NTsyNDZtPGNocj5cdTAwMWJbMzltXHUwMDFiWzIzbVxuXHUwMDFiWzM4OzU7MjUwbTFcdTAwMWJbMzltIGEgICAgXG5cdTAwMWJbMzg7NTsyNTBtMlx1MDAxYlszOW0gYiAgICBcblx1MDAxYlszODs1OzI1MG0zXHUwMDFiWzM5bSBiICAgIFxuIn0= -->
+<pre><code>[38;5;246m# A tibble: 3 x 1[39m
+  x    
+  [3m[38;5;246m&lt;chr&gt;[39m[23m
+[38;5;250m1[39m a    
+[38;5;250m2[39m b    
+[38;5;250m3[39m b    </code></pre>
+<!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <p><code>drop_na</code> and <code>replace_na</code></p>
@@ -383,6 +536,25 @@ cols(
 <p><code>fill</code></p>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZGYgJT4lIGZpbGwoWWVhcilcblxuYGBgIn0= -->
+<pre class="r"><code>df %&gt;% fill(Year)
+</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiICAgTW9udGggWWVhclxuMSAgICAgIDEgMjAwMFxuMiAgICAgIDIgMjAwMFxuMyAgICAgIDMgMjAwMFxuNCAgICAgIDQgMjAwMFxuNSAgICAgIDUgMjAwMFxuNiAgICAgIDYgMjAwMFxuNyAgICAgIDcgMjAwMFxuOCAgICAgIDggMjAwMFxuOSAgICAgIDkgMjAwMFxuMTAgICAgMTAgMjAwMFxuMTEgICAgMTEgMjAwMFxuMTIgICAgMTIgMjAwMFxuIn0= -->
+<pre><code>   Month Year
+1      1 2000
+2      2 2000
+3      3 2000
+4      4 2000
+5      5 2000
+6      6 2000
+7      7 2000
+8      8 2000
+9      9 2000
+10    10 2000
+11    11 2000
+12    12 2000</code></pre>
+<!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <p><code>full_seq</code></p>
@@ -397,7 +569,7 @@ cols(
 <!-- rnb-text-end -->
 </div>
 
-<div id="rmd-source-code">LS0tCnRpdGxlOiAiY20wMDkgRXhlcmNpc2VzOiB0aWR5IGRhdGEiCm91dHB1dDogaHRtbF9ub3RlYm9vawplZGl0b3Jfb3B0aW9uczogCiAgY2h1bmtfb3V0cHV0X3R5cGU6IGlubGluZQotLS0KCmBgYHtyfQpzdXBwcmVzc1BhY2thZ2VTdGFydHVwTWVzc2FnZXMobGlicmFyeSh0aWR5dmVyc2UpKQpgYGAKCiMjIFJlYWRpbmcgYW5kIFdyaXRpbmcgRGF0YTogRXhlcmNpc2VzCgpNYWtlIGEgdGliYmxlIG9mIGxldHRlcnMsIHRoZWlyIG9yZGVyIGluIHRoZSBhbHBoYWJldCwgYW5kIHRoZW4gYSBwYXN0aW5nIG9mIHRoZSB0d28gY29sdW1ucyB0b2dldGhlci4KCmBgYHtyfQp0aWJibGUobGV0ID0gbGV0dGVycywKICAgICAgIG51bSA9IDE6bGVuZ3RoKGxldHRlcnMpLAogICAgICAgY29tYiA9IHBhc3RlMChsZXQsIG51bSkpCmBgYAoKTWFrZSBhIHRpYmJsZSBvZiB0aHJlZSBuYW1lcyBhbmQgY29tbXV0ZSB0aW1lcy4KCmBgYHtyfQp0cmliYmxlKAogICAgfm5hbWUsIH50aW1lLAogICAgIkZyYW5rIiwgMzAsCiAgICAiTGlzYSIsIDE1LAogICAgIkZyZWQiLCA0MAopCmBgYAoKCldyaXRlIHRoZSBgaXJpc2AgZGF0YSBmcmFtZSBhcyBhIGBjc3ZgLiAKCmBgYHtyfQp3cml0ZV9jc3YoaXJpcywgImlyaXMuY3N2IikKYGBgCgpXcml0ZSB0aGUgYGlyaXNgIGRhdGEgZnJhbWUgdG8gYSBmaWxlIGRlbGltaXRlZCBieSBhIGRvbGxhciBzaWduLiAKCmBgYHtyfQp3cml0ZV9kZWxpbShpcmlzLCAiaXJpcy50eHQiLCBkZWxpbSA9ICIkIikKYGBgCgpSZWFkIHRoZSBkb2xsYXItZGVsaW1pdGVkIGBpcmlzYCBkYXRhIHRvIGEgdGliYmxlLgoKYGBge3J9CnJlYWRfZGVsaW0oImlyaXMudHh0IiwgZGVsaW0gPSAiJCIpCmBgYAoKUmVhZCB0aGVzZSB0aHJlZSBMT1RSIGNzdidzLCBzYXZpbmcgdGhlbSB0byBgbG90cjFgLCBgbG90cjJgLCBhbmQgYGxvdHIzYDoKCi0gaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2plbm55YmMvbG90ci10aWR5L21hc3Rlci9kYXRhL1RoZV9GZWxsb3dzaGlwX09mX1RoZV9SaW5nLmNzdgotIGh0dHBzOi8vcmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbS9qZW5ueWJjL2xvdHItdGlkeS9tYXN0ZXIvZGF0YS9UaGVfVHdvX1Rvd2Vycy5jc3YKLSBodHRwczovL2dpdGh1Yi5jb20vamVubnliYy9sb3RyLXRpZHkvYmxvYi9tYXN0ZXIvZGF0YS9UaGVfUmV0dXJuX09mX1RoZV9LaW5nLmNzdgoKYGBge3J9CmxvdHIxIDwtIHJlYWRfY3N2KCJodHRwczovL3Jhdy5naXRodWJ1c2VyY29udGVudC5jb20vamVubnliYy9sb3RyLXRpZHkvbWFzdGVyL2RhdGEvVGhlX0ZlbGxvd3NoaXBfT2ZfVGhlX1JpbmcuY3N2IikKbG90cjIgPC0gcmVhZF9jc3YoImh0dHBzOi8vcmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbS9qZW5ueWJjL2xvdHItdGlkeS9tYXN0ZXIvZGF0YS9UaGVfVHdvX1Rvd2Vycy5jc3YiKQpsb3RyMyA8LSByZWFkX2NzdigiaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2plbm55YmMvbG90ci10aWR5L21hc3Rlci9kYXRhL1RoZV9SZXR1cm5fT2ZfVGhlX0tpbmcuY3N2IikKYGBgCgojIyBgZ2F0aGVyKClgCgooRXhlcmNpc2VzIGxhcmdlbHkgYmFzZWQgb2ZmIG9mIEplbm55IEJyeWFuJ3MgW2dhdGhlciB0dXRvcmlhbF0oaHR0cHM6Ly9naXRodWIuY29tL2plbm55YmMvbG90ci10aWR5L2Jsb2IvbWFzdGVyLzAyLWdhdGhlci5tZCkpCgpUaGlzIGZ1bmN0aW9uIGlzIHVzZWZ1bCBmb3IgbWFraW5nIHVudGlkeSBkYXRhIHRpZHkgKHNvIHRoYXQgY29tcHV0ZXJzIGNhbiBtb3JlIGVhc2lseSBjcnVuY2ggdGhlIG51bWJlcnMpLgoKMS4gQ29tYmluZSB0aGUgdGhyZWUgTE9UUiB1bnRpZHkgdGFibGVzIChgbG90cjFgLCBgbG90cjJgLCBgbG90cjNgKSB0byBhIHNpbmdsZSB1bnRpZHkgdGFibGUgYnkgc3RhY2tpbmcgdGhlbS4gIAoKYGBge3J9CgpgYGAKCjIuIENvbnZlcnQgdG8gdGlkeS4gQWxzbyB0cnkgdGhpcyBieSBzcGVjaWZ5aW5nIGNvbHVtbnMgYXMgYSByYW5nZSwgYW5kIHdpdGggdGhlIGBjb250YWlucygpYCBmdW5jdGlvbi4KCmBgYHtyfQoKYGBgCgozLiBUcnkgYWdhaW4gKGJpbmQgYW5kIHRpZHkgdGhlIHRocmVlIHVudGlkeSBkYXRhIGZyYW1lcyksIGJ1dCB3aXRob3V0IGtub3dpbmcgaG93IG1hbnkgdGFibGVzIHRoZXJlIGFyZSBvcmlnaW5hbGx5LiAKICAgIC0gVGhlIGFkZGl0aW9uYWwgd29yayBoZXJlIGRvZXMgbm90IHJlcXVpcmUgYW55IGFkZGl0aW9uYWwgdG9vbHMgZnJvbSB0aGUgdGlkeXZlcnNlLCBidXQgaW5zdGVhZCB1c2VzIGEgYGRvLmNhbGxgIGZyb20gYmFzZSBSIC0tIGEgdXNlZnVsIHRvb2wgaW4gZGF0YSBhbmFseXNpcyB3aGVuIHRoZSBudW1iZXIgb2YgIml0ZW1zIiBpcyB2YXJpYWJsZS91bmtub3duLCBvciBxdWl0ZSBsYXJnZS4gCgpgYGB7cn0KCmBgYAoKIyMgYHNwcmVhZCgpYAoKKEV4ZXJjaXNlcyBsYXJnZWx5IGJhc2VkIG9mZiBvZiBKZW5ueSBCcnlhbidzIFtzcHJlYWQgdHV0b3JpYWxdKGh0dHBzOi8vZ2l0aHViLmNvbS9qZW5ueWJjL2xvdHItdGlkeS9ibG9iL21hc3Rlci8wMy1zcHJlYWQubWQpKQoKVGhpcyBmdW5jdGlvbiBpcyB1c2VmdWwgZm9yIG1ha2luZyB0aWR5IGRhdGEgdW50aWR5ICh0byBiZSBtb3JlIHBsZWFzaW5nIHRvIHRoZSBleWUpLgoKUmVhZCBpbiB0aGUgdGlkeSBMT1RSIGRhdGEgKGRlc3BpdGUgaGF2aW5nIGp1c3QgbWFkZSBpdCk6CgpgYGB7cn0KbG90cl90aWR5IDwtIHJlYWRfY3N2KCJodHRwczovL3Jhdy5naXRodWJ1c2VyY29udGVudC5jb20vamVubnliYy9sb3RyLXRpZHkvbWFzdGVyL2RhdGEvbG90cl90aWR5LmNzdiIpCmBgYAoKR2V0IHdvcmQgY291bnRzIGFjcm9zcyAiUmFjZSIuIFRoZW4gdHJ5ICJHZW5kZXIiLiAKCmBgYHtyfQoKYGBgCgpOb3cgdHJ5IGNvbWJpbmluZyByYWNlIGFuZCBnZW5kZXIuIFVzZSBgdW5pdGUoKWAgZnJvbSBgdGlkeXJgIGluc3RlYWQgb2YgYHBhc3RlKClgLiAKCmBgYHtyfQoKYGBgCgojIyBPdGhlciBgdGlkeXJgIGdvb2RpZXMKCkNoZWNrIG91dCB0aGUgRXhhbXBsZXMgaW4gdGhlIGRvY3VtZW50YXRpb24gdG8gZXhwbG9yZSB0aGUgZm9sbG93aW5nLgoKYGV4cGFuZGAgdnMgYGNvbXBsZXRlYCAodHJpbSB2cyBrZWVwIGV2ZXJ5dGhpbmcpLiBUb2dldGhlciB3aXRoIGBuZXN0aW5nYC4gQ2hlY2sgb3V0IHRoZSBFeGFtcGxlcyBpbiB0aGUgYGV4cGFuZGAgZG9jdW1lbnRhdGlvbi4KCmBgYHtyfQoKYGBgCgpgc2VwYXJhdGVfcm93c2A6IHVzZWZ1bCB3aGVuIHlvdSBoYXZlIGEgdmFyaWFibGUgbnVtYmVyIG9mIGVudHJpZXMgaW4gYSAiY2VsbCIuCgpgYGB7cn0KCmBgYAoKYHVuaXRlYCBhbmQgYHNlcGFyYXRlYC4KCmBgYHtyfQoKYGBgCgpgdW5jb3VudGAgKGFzIHRoZSBvcHBvc2l0ZSBvZiBgZHBseXI6OmNvdW50KClgKQoKYGBge3J9CgpgYGAKCgpgZHJvcF9uYWAgYW5kIGByZXBsYWNlX25hYAoKYGBge3J9CgpgYGAKCmBmaWxsYAoKYGBge3J9CgpgYGAKCgpgZnVsbF9zZXFgCgpgYGB7cn0KCmBgYAoKCiMjIFRpbWUgcmVtYWluaW5nPwoKVGltZSBwZXJtaXR0aW5nLCBkbyBbdGhpcyBleGVyY2lzZV0oaHR0cHM6Ly9naXRodWIuY29tL2plbm55YmMvbG90ci10aWR5L2Jsb2IvbWFzdGVyLzAyLWdhdGhlci5tZCNleGVyY2lzZXMpIHRvIHByYWN0aWNlIHRpZHlpbmcgZGF0YS4g</div>
+<div id="rmd-source-code">LS0tCnRpdGxlOiAiY20wMDkgRXhlcmNpc2VzOiB0aWR5IGRhdGEiCm91dHB1dDogaHRtbF9ub3RlYm9vawplZGl0b3Jfb3B0aW9uczogCiAgY2h1bmtfb3V0cHV0X3R5cGU6IGlubGluZQotLS0KCmBgYHtyfQpzdXBwcmVzc1BhY2thZ2VTdGFydHVwTWVzc2FnZXMobGlicmFyeSh0aWR5dmVyc2UpKQpgYGAKCiMjIFJlYWRpbmcgYW5kIFdyaXRpbmcgRGF0YTogRXhlcmNpc2VzCgpNYWtlIGEgdGliYmxlIG9mIGxldHRlcnMsIHRoZWlyIG9yZGVyIGluIHRoZSBhbHBoYWJldCwgYW5kIHRoZW4gYSBwYXN0aW5nIG9mIHRoZSB0d28gY29sdW1ucyB0b2dldGhlci4KCmBgYHtyfQp0aWJibGUobGV0ID0gbGV0dGVycywKICAgICAgIG51bSA9IDE6bGVuZ3RoKGxldHRlcnMpLAogICAgICAgY29tYiA9IHBhc3RlMChsZXQsIG51bSkpCmBgYAoKTWFrZSBhIHRpYmJsZSBvZiB0aHJlZSBuYW1lcyBhbmQgY29tbXV0ZSB0aW1lcy4KCmBgYHtyfQp0cmliYmxlKAogICAgfm5hbWUsIH50aW1lLAogICAgIkZyYW5rIiwgMzAsCiAgICAiTGlzYSIsIDE1LAogICAgIkZyZWQiLCA0MAopCmBgYAoKCldyaXRlIHRoZSBgaXJpc2AgZGF0YSBmcmFtZSBhcyBhIGBjc3ZgLiAKCmBgYHtyfQp3cml0ZV9jc3YoaXJpcywgImlyaXMuY3N2IikKYGBgCgpXcml0ZSB0aGUgYGlyaXNgIGRhdGEgZnJhbWUgdG8gYSBmaWxlIGRlbGltaXRlZCBieSBhIGRvbGxhciBzaWduLiAKCmBgYHtyfQp3cml0ZV9kZWxpbShpcmlzLCAiaXJpcy50eHQiLCBkZWxpbSA9ICIkIikKYGBgCgpSZWFkIHRoZSBkb2xsYXItZGVsaW1pdGVkIGBpcmlzYCBkYXRhIHRvIGEgdGliYmxlLgoKYGBge3J9CnJlYWRfZGVsaW0oImlyaXMudHh0IiwgZGVsaW0gPSAiJCIpCmBgYAoKUmVhZCB0aGVzZSB0aHJlZSBMT1RSIGNzdidzLCBzYXZpbmcgdGhlbSB0byBgbG90cjFgLCBgbG90cjJgLCBhbmQgYGxvdHIzYDoKCi0gaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2plbm55YmMvbG90ci10aWR5L21hc3Rlci9kYXRhL1RoZV9GZWxsb3dzaGlwX09mX1RoZV9SaW5nLmNzdgotIGh0dHBzOi8vcmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbS9qZW5ueWJjL2xvdHItdGlkeS9tYXN0ZXIvZGF0YS9UaGVfVHdvX1Rvd2Vycy5jc3YKLSBodHRwczovL2dpdGh1Yi5jb20vamVubnliYy9sb3RyLXRpZHkvYmxvYi9tYXN0ZXIvZGF0YS9UaGVfUmV0dXJuX09mX1RoZV9LaW5nLmNzdgoKYGBge3J9CmxvdHIxIDwtIHJlYWRfY3N2KCJodHRwczovL3Jhdy5naXRodWJ1c2VyY29udGVudC5jb20vamVubnliYy9sb3RyLXRpZHkvbWFzdGVyL2RhdGEvVGhlX0ZlbGxvd3NoaXBfT2ZfVGhlX1JpbmcuY3N2IikKbG90cjIgPC0gcmVhZF9jc3YoImh0dHBzOi8vcmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbS9qZW5ueWJjL2xvdHItdGlkeS9tYXN0ZXIvZGF0YS9UaGVfVHdvX1Rvd2Vycy5jc3YiKQpsb3RyMyA8LSByZWFkX2NzdigiaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2plbm55YmMvbG90ci10aWR5L21hc3Rlci9kYXRhL1RoZV9SZXR1cm5fT2ZfVGhlX0tpbmcuY3N2IikKYGBgCgojIyBgZ2F0aGVyKClgCgooRXhlcmNpc2VzIGxhcmdlbHkgYmFzZWQgb2ZmIG9mIEplbm55IEJyeWFuJ3MgW2dhdGhlciB0dXRvcmlhbF0oaHR0cHM6Ly9naXRodWIuY29tL2plbm55YmMvbG90ci10aWR5L2Jsb2IvbWFzdGVyLzAyLWdhdGhlci5tZCkpCgpUaGlzIGZ1bmN0aW9uIGlzIHVzZWZ1bCBmb3IgbWFraW5nIHVudGlkeSBkYXRhIHRpZHkgKHNvIHRoYXQgY29tcHV0ZXJzIGNhbiBtb3JlIGVhc2lseSBjcnVuY2ggdGhlIG51bWJlcnMpLgoKMS4gQ29tYmluZSB0aGUgdGhyZWUgTE9UUiB1bnRpZHkgdGFibGVzIChgbG90cjFgLCBgbG90cjJgLCBgbG90cjNgKSB0byBhIHNpbmdsZSB1bnRpZHkgdGFibGUgYnkgc3RhY2tpbmcgdGhlbS4gIAoKYGBge3J9Cihsb3RyX3VudGlkeSA8LSBiaW5kX3Jvd3MobG90cjEsIGxvdHIyLCBsb3RyMykpCmBgYAoKMi4gQ29udmVydCB0byB0aWR5LiBBbHNvIHRyeSB0aGlzIGJ5IHNwZWNpZnlpbmcgY29sdW1ucyBhcyBhIHJhbmdlLCBhbmQgd2l0aCB0aGUgYGNvbnRhaW5zKClgIGZ1bmN0aW9uLgoKYGBge3J9CmdhdGhlcihsb3RyX3VudGlkeSwga2V5PSJHZW5kZXIiLCB2YWx1ZT0iV29yZCIsIEZlbWFsZSwgTWFsZSkKZ2F0aGVyKGxvdHJfdW50aWR5LCBrZXk9IkdlbmRlciIsIHZhbHVlPSJXb3JkIiwgRmVtYWxlOk1hbGUpCmdhdGhlcihsb3RyX3VudGlkeSwga2V5PSJHZW5kZXIiLCB2YWx1ZT0iV29yZCIsIGNvbnRhaW5zKCJhbGUiKSkKYGBgCgozLiBUcnkgYWdhaW4gKGJpbmQgYW5kIHRpZHkgdGhlIHRocmVlIHVudGlkeSBkYXRhIGZyYW1lcyksIGJ1dCB3aXRob3V0IGtub3dpbmcgaG93IG1hbnkgdGFibGVzIHRoZXJlIGFyZSBvcmlnaW5hbGx5LiAKICAgIC0gVGhlIGFkZGl0aW9uYWwgd29yayBoZXJlIGRvZXMgbm90IHJlcXVpcmUgYW55IGFkZGl0aW9uYWwgdG9vbHMgZnJvbSB0aGUgdGlkeXZlcnNlLCBidXQgaW5zdGVhZCB1c2VzIGEgYGRvLmNhbGxgIGZyb20gYmFzZSBSIC0tIGEgdXNlZnVsIHRvb2wgaW4gZGF0YSBhbmFseXNpcyB3aGVuIHRoZSBudW1iZXIgb2YgIml0ZW1zIiBpcyB2YXJpYWJsZS91bmtub3duLCBvciBxdWl0ZSBsYXJnZS4gCgpgYGB7cn0KbG90cl9saXN0IDwtIGxpc3QobG90cjEsIGxvdHIyLCBsb3RyMykKbG90cl9saXN0CmRvLmNhbGwoYmluZF9yb3dzLCBsb3RyX2xpc3QpCmBgYAoKIyMgYHNwcmVhZCgpYAoKKEV4ZXJjaXNlcyBsYXJnZWx5IGJhc2VkIG9mZiBvZiBKZW5ueSBCcnlhbidzIFtzcHJlYWQgdHV0b3JpYWxdKGh0dHBzOi8vZ2l0aHViLmNvbS9qZW5ueWJjL2xvdHItdGlkeS9ibG9iL21hc3Rlci8wMy1zcHJlYWQubWQpKQoKVGhpcyBmdW5jdGlvbiBpcyB1c2VmdWwgZm9yIG1ha2luZyB0aWR5IGRhdGEgdW50aWR5ICh0byBiZSBtb3JlIHBsZWFzaW5nIHRvIHRoZSBleWUpLgoKUmVhZCBpbiB0aGUgdGlkeSBMT1RSIGRhdGEgKGRlc3BpdGUgaGF2aW5nIGp1c3QgbWFkZSBpdCk6CgpgYGB7cn0KbG90cl90aWR5IDwtIHJlYWRfY3N2KCJodHRwczovL3Jhdy5naXRodWJ1c2VyY29udGVudC5jb20vamVubnliYy9sb3RyLXRpZHkvbWFzdGVyL2RhdGEvbG90cl90aWR5LmNzdiIpCmBgYAoKR2V0IHdvcmQgY291bnRzIGFjcm9zcyAiUmFjZSIuIFRoZW4gdHJ5ICJHZW5kZXIiLiAKCmBgYHtyfQpzcHJlYWQobG90cl90aWR5LCBrZXkgPSAiUmFjZSIsIHZhbHVlID0gIldvcmRzIikKYGBgCgpOb3cgdHJ5IGNvbWJpbmluZyByYWNlIGFuZCBnZW5kZXIuIFVzZSBgdW5pdGUoKWAgZnJvbSBgdGlkeXJgIGluc3RlYWQgb2YgYHBhc3RlKClgLiAKCmBgYHtyfQpsb3RyX3RpZHkgJT4lIAogICAgdW5pdGUoUmFjZV9HZW5kZXIsIFJhY2UsIEdlbmRlcikgJT4lIAogICAgc3ByZWFkKGtleT0iUmFjZV9HZW5kZXIiLCB2YWx1ZT0iV29yZHMiKQpsb3RyX3RpZHkKbG90cl90aWR5ICU+JSAKICAgIG11dGF0ZSh4ID0gcm5vcm0obnJvdyhsb3RyX3RpZHkpKSkgJT4lIAogICAgc3ByZWFkKGtleT0iR2VuZGVyIiwgdmFsdWU9IngiKQpgYGAKCiMjIE90aGVyIGB0aWR5cmAgZ29vZGllcwoKQ2hlY2sgb3V0IHRoZSBFeGFtcGxlcyBpbiB0aGUgZG9jdW1lbnRhdGlvbiB0byBleHBsb3JlIHRoZSBmb2xsb3dpbmcuCgpgZXhwYW5kYCB2cyBgY29tcGxldGVgICh0cmltIHZzIGtlZXAgZXZlcnl0aGluZykuIFRvZ2V0aGVyIHdpdGggYG5lc3RpbmdgLiBDaGVjayBvdXQgdGhlIEV4YW1wbGVzIGluIHRoZSBgZXhwYW5kYCBkb2N1bWVudGF0aW9uLgoKYGBge3J9CmV4cGFuZChtdGNhcnMsIHZzLCBjeWwpCmRmIDwtIHRpYmJsZSgKICB5ZWFyICAgPSBjKDIwMTAsIDIwMTAsIDIwMTAsIDIwMTAsIDIwMTIsIDIwMTIsIDIwMTIpLAogIHF0ciAgICA9IGMoICAgMSwgICAgMiwgICAgMywgICAgNCwgICAgMSwgICAgMiwgICAgMyksCiAgcmV0dXJuID0gcm5vcm0oNykKKQpkZiAlPiUgZXhwYW5kKHllYXIsIHF0cikKZGYgJT4lIGV4cGFuZCh5ZWFyID0gZnVsbF9zZXEoeWVhciwgMSksIHF0cikKZGYgJT4lIGNvbXBsZXRlKHllYXIgPSBmdWxsX3NlcSh5ZWFyLCAxKSwgcXRyKQpleHBlcmltZW50IDwtIHRpYmJsZSgKICBuYW1lID0gcmVwKGMoIkFsZXgiLCAiUm9iZXJ0IiwgIlNhbSIpLCBjKDMsIDIsIDEpKSwKICB0cnQgID0gcmVwKGMoImEiLCAiYiIsICJhIiksIGMoMywgMiwgMSkpLAogIHJlcCA9IGMoMSwgMiwgMywgMSwgMiwgMSksCiAgbWVhc3VybWVudF8xID0gcnVuaWYoNiksCiAgbWVhc3VybWVudF8yID0gcnVuaWYoNikKKQpleHBlcmltZW50CmV4cGVyaW1lbnQgJT4lIGV4cGFuZChuZXN0aW5nKG5hbWUsIHRydCksIHJlcCkKYGBgCgpgc2VwYXJhdGVfcm93c2A6IHVzZWZ1bCB3aGVuIHlvdSBoYXZlIGEgdmFyaWFibGUgbnVtYmVyIG9mIGVudHJpZXMgaW4gYSAiY2VsbCIuCgpgYGB7cn0KZGYgPC0gZGF0YS5mcmFtZSgKICB4ID0gMTozLAogIHkgPSBjKCJhIiwgImQsZSxmIiwgImcsaCIpLAogIHogPSBjKCIxIiwgIjIsMyw0IiwgIjUsNiIpLAogIHN0cmluZ3NBc0ZhY3RvcnMgPSBGQUxTRQopCmRmCnNlcGFyYXRlX3Jvd3MoZGYsIHksIHosIGNvbnZlcnQgPSBUUlVFKQpgYGAKCmB1bml0ZWAgYW5kIGBzZXBhcmF0ZWAuCgpgYGB7cn0KCmBgYAoKYHVuY291bnRgIChhcyB0aGUgb3Bwb3NpdGUgb2YgYGRwbHlyOjpjb3VudCgpYCkKCmBgYHtyfQpkZiA8LSB0aWJibGU6OnRpYmJsZSh4ID0gYygiYSIsICJiIiksIG4gPSBjKDEsIDIpKQpkZgp1bmNvdW50KGRmLCBuKQpgYGAKCgpgZHJvcF9uYWAgYW5kIGByZXBsYWNlX25hYAoKYGBge3J9CgpgYGAKCmBmaWxsYAoKYGBge3J9CmRmIDwtIGRhdGEuZnJhbWUoTW9udGggPSAxOjEyLCBZZWFyID0gYygyMDAwLCByZXAoTkEsIDExKSkpCmRmICU+JSBmaWxsKFllYXIpCmBgYAoKCmBmdWxsX3NlcWAKCmBgYHtyfQoKYGBgCgoKIyMgVGltZSByZW1haW5pbmc/CgpUaW1lIHBlcm1pdHRpbmcsIGRvIFt0aGlzIGV4ZXJjaXNlXShodHRwczovL2dpdGh1Yi5jb20vamVubnliYy9sb3RyLXRpZHkvYmxvYi9tYXN0ZXIvMDItZ2F0aGVyLm1kI2V4ZXJjaXNlcykgdG8gcHJhY3RpY2UgdGlkeWluZyBkYXRhLiA=</div>
 
 
 

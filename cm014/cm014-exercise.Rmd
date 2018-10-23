@@ -102,8 +102,9 @@ summary(my_lm) %>%
 We can use the `predict()` function to make predictions from the model (default is to use fitting/training data). Here are the predictions:
 
 ```{r}
+
 predict(my_lm, newdata = tibble(gdpPercap = c(500, 600, 700)))
-gapminder %>% head()
+gapminder %>% head()  # This is my comment
 ```
 
 We can plot models (with one predictor/ X variable) using `ggplot2` through the `geom_smooth()` layer. Specifying `method="lm"` gives us the linear regression fit (but only visually!):
